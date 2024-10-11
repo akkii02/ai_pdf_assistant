@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# AI-PDF Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project enables users to interact with an AI assistant to ask questions about the content of a PDF document. Users can upload a PDF file, type their questions in a chat interface, and receive responses from the AI.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **PDF Upload**: Allows users to upload a PDF document, which is processed and analyzed by the AI.
+- **Interactive Chat**: Users can ask questions related to the PDF content and get real-time responses.
+- **Message Display with Avatars**: User and AI messages are displayed with different avatars to distinguish between them.
+- **Auto-Scrolling**: Automatically scrolls to the latest message in the chat box.
 
-### `npm start`
+## Functionality Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. PDF Upload
+- A file input lets users upload a PDF.
+- The uploaded PDF is processed by the backend, and its content is made available for querying.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. AI-Powered Chat
+- Users can ask questions about the uploaded PDF by typing into the chat.
+- The backend responds with answers based on the content of the uploaded PDF.
+- AI responses are displayed alongside user messages in a chat format.
 
-### `npm test`
+### 3. Message Display and User Avatars
+- Messages from the user and the AI are displayed with corresponding avatars.
+- This visual distinction helps users track the conversation easily.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Real-Time Auto-Scrolling
+- When new messages are added to the conversation, the chat box automatically scrolls to the bottom, ensuring that users always see the latest message.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: 
+  - React for building the user interface.
+  - CSS Modules for scoped styling.
+  - React Icons for upload and message icons.
+  
+- **Backend**: 
+  - An AI-powered PDF processing service hosted on Vercel.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## screenshoot
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://github.com/user-attachments/assets/9ef89212-cb72-44ca-a1cb-4cdb51f6ea42)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
