@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Navbar from './components/Navbar/Navbar';
+import Chat from './components/Chat/Chat';
 
 function App() {
+  const [pdfContent, setPdfContent] = useState(""); // State to store PDF content
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Pass the setPdfContent function to Navbar so it can update the state */}
+      <Navbar setPdfContent={setPdfContent} />
+      
+      {/* Pass the pdfContent to Chat so it can use it */}
+      <Chat pdfContent={pdfContent} />
+    </>
   );
 }
 
