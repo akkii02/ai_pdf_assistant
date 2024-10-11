@@ -11,6 +11,14 @@
     scrollbar-width: none;
     position: relative;
   }
+  .message{
+  display: flex;
+  align-items: center;
+
+  }
+  .avatar{
+    margin: 0 3px;
+  }
   
   /* Chat box - where messages are displayed */
   .chatBox {
@@ -66,20 +74,22 @@
     align-items: center;
     padding: 10px;
     border-radius: 15px;
+    background-color: #f1f1f1;
   }
   
   /* Input box styling */
   .input {
+    background-color: #f1f1f1;
     height: auto;
     flex-grow: 1;
     padding: 30px 20px;
     border: none;
     border-radius: 25px;
-    background-color: #f1f1f1;
+    border: none;
+    outline: none;
     margin-right: 10px;
     font-size: 16px;
-    outline: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
     scrollbar-width: none;
   }
   
